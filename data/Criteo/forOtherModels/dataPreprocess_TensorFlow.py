@@ -18,10 +18,13 @@ def get_train_test_file(file_path, feat_dict_, split_ratio=0.9):
     test_value_fout = open('test_value', 'w')
     test_idx_fout = open('test_idx', 'w')
 
-    categorical_range_ = range(1, 10)
-    continuous_range_ = range(10, 18)
-    cont_min_ = [1, 0, -1.0, 0.001388888888888889, -8707.090833333334, -962673.0000000001, 1.0, -2.0]
-    cont_max_ = [30232, 404, 9.0, 8856.886111111111, 8725.736944444445, 2195706.5, 9.0, 3.0]
+    categorical_range_  = range(1, 11)
+    continuous_range_ = range(11, 19)
+
+    cont_min_ = [1.00000000e+00, 0.00000000e+00, -1.00000000e+00, 1.38888889e-03,
+                 -8.70709083e+03, -9.62673000e+05, -1, -4.00000000e+00]
+    cont_max_ = [3.02320000e+04, 4.04000000e+02, 9.00000000e+00, 9.85688611e+03,
+                 8.72573694e+03, 2.19570650e+06, 9.00000000e+00, 4.00000000e+00]
     cont_diff_ = [cont_max_[i] - cont_min_[i] for i in range(len(cont_min_))]
 
     # 分割并获取索引以及特征值这些
@@ -40,8 +43,8 @@ def get_train_test_file(file_path, feat_dict_, split_ratio=0.9):
             else:
                 # 否则用索引值代替
                 feat_idx.append(feat_dict_[idx])
-                # 对应值则用标准化之后的值
-                feat_value.append(round((float(features[idx]) - cont_min_[idx - 1]) / cont_diff_[idx - 1], 6))
+                # 原来的值
+                feat_value.append(features[idx])
 
         # 处理分类型数据
         for idx in categorical_range_:
@@ -94,8 +97,8 @@ def get_feat_dict():
     freq_ = 10
     dir_feat_dict_ = 'feat_dict_' + str(freq_) + '.pkl2'
     # 确定连续和分类特征的列
-    continuous_range_ = range(1, 14)
-    categorical_range_ = range(14, 40)
+    categorical_range_ = range(1, 11)
+    continuous_range_ = range(11, 19)
 
     if os.path.exists(dir_feat_dict_):
         feat_dict = pickle.load(open(dir_feat_dict_, 'rb'))
@@ -107,7 +110,7 @@ def get_feat_dict():
         with open('../train.txt', 'r') as fin:
             for line_idx, line in enumerate(fin):
                 # for test
-                print("line_idx---", line_idx, "line---", line)
+                # print("line_idx---", line_idx, "line---", line)
                 if line_idx >= EACH_FILE_DATA_NUM * 10:
                     break
 
@@ -116,7 +119,7 @@ def get_feat_dict():
                 features = line.rstrip('\n').split(',')
                 for idx in categorical_range_:
                     if features[idx] == '': continue
-                    print(features[idx],"----333", idx)
+                    # print(features[idx], "----categorical_range_333", idx)
                     feat_cnt.update([features[idx]])
 
         # Only retain discrete features with high frequency

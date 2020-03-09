@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b5663362-16ea-42b5-aa21-616da7d06059" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/DeepFM_TensorFlow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/DeepFM_TensorFlow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Criteo/forOtherModels/dataPreprocess_TensorFlow.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/Criteo/forOtherModels/dataPreprocess_TensorFlow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Criteo/forOtherModels/feat_dict_10.pkl2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Criteo/forOtherModels/test_idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Criteo/forOtherModels/test_label" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Criteo/forOtherModels/test_value" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Criteo/forOtherModels/train_idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Criteo/forOtherModels/train_label" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Criteo/forOtherModels/train_value" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Criteo/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Criteo/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Criteo/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Criteo/train.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/train_model_util_TensorFlow.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/train_model_util_TensorFlow.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,22 +16,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/regression/regression.py">
+        <entry file="file://$PROJECT_DIR$/data/Criteo/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="6" selection-start-column="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Criteo/train.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/Criteo/forOtherModels/dataPreprocess_TensorFlow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+            <state relative-caret-position="-1090">
+              <caret line="100" column="37" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -49,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/DeepFM_TensorFlow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="242">
+              <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -58,9 +53,25 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/util/train_model_util_TensorFlow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="99" column="2" selection-start-line="99" selection-start-column="2" selection-end-line="100" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Criteo/test.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/data/Criteo/forOtherModels/test_value">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="2202" column="16" selection-start-line="2202" selection-start-column="12" selection-end-line="2202" selection-end-column="16" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -76,9 +87,25 @@
     <findStrings>
       <find>epochs</find>
       <find>vocab_size</find>
+      <find>range</find>
+      <find>categorical_range_</find>
+      <find>---</find>
+      <find>14</find>
+      <find>idx</find>
+      <find>,</find>
+      <find>bear</find>
+      <find>get_batch_dataset</find>
       <find>\\t</find>
+      <find>roc_auc_score</find>
+      <find>Roc AU</find>
+      <find>----</find>
+      <find>190</find>
+      <find>accuracy_score</find>
+      <find>test_batch_dataset</find>
+      <find>feat_index</find>
     </findStrings>
     <replaceStrings>
+      <replace>\t</replace>
       <replace>,</replace>
     </replaceStrings>
   </component>
@@ -92,13 +119,19 @@
         <option value="$PROJECT_DIR$/classification/classification.py" />
         <option value="$PROJECT_DIR$/text_classification/text_classification.py" />
         <option value="$PROJECT_DIR$/regression/regression.py" />
+        <option value="$PROJECT_DIR$/data/Criteo/forOtherModels/test_value" />
+        <option value="$PROJECT_DIR$/data/Criteo/forOtherModels/train_idx" />
+        <option value="$PROJECT_DIR$/data/Criteo/forOtherModels/train_value" />
+        <option value="$PROJECT_DIR$/data/Criteo/forOtherModels/test_idx" />
         <option value="$PROJECT_DIR$/data/Criteo/forOtherModels/dataPreprocess_TensorFlow.py" />
+        <option value="$PROJECT_DIR$/Model/DeepFM_TensorFlow.py" />
+        <option value="$PROJECT_DIR$/util/train_model_util_TensorFlow.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="-1" />
+    <option name="y" value="-24" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -141,7 +174,7 @@
             <path>
               <item name="DL" type="b2602c69:ProjectViewProjectNode" />
               <item name="DL" type="462c0819:PsiDirectoryNode" />
-              <item name="regression" type="462c0819:PsiDirectoryNode" />
+              <item name="格式化数据分类" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -175,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dataPreprocess_TensorFlow">
+  <component name="RunManager" selected="Python.DeepFM_TensorFlow">
     <configuration name="DeepFM_TensorFlow" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -288,8 +321,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dataPreprocess_TensorFlow" />
         <item itemvalue="Python.DeepFM_TensorFlow" />
+        <item itemvalue="Python.dataPreprocess_TensorFlow" />
         <item itemvalue="Python.regression" />
         <item itemvalue="Python.text_classification" />
         <item itemvalue="Python.classification" />
@@ -313,29 +346,37 @@
       <workItem from="1563268815564" duration="7263000" />
       <workItem from="1563280866849" duration="3359000" />
       <workItem from="1583720743109" duration="596000" />
-      <workItem from="1583739978946" duration="2028000" />
+      <workItem from="1583739978946" duration="2916000" />
+      <workItem from="1583742999029" duration="13121000" />
     </task>
+    <task id="LOCAL-00001" summary="修改测试">
+      <created>1583742098860</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583742098860</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24162000" />
+    <option name="totallyTimeSpent" value="38171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2806354" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32786885" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2590164" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -352,36 +393,60 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改测试" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Model/DeepFM_TensorFlow.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model/DeepFM_TensorFlow.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Model/DeepFM_TensorFlow.py</url>
           <line>99</line>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Model/DeepFM_TensorFlow.py</url>
-          <line>100</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/util/train_model_util_TensorFlow.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Model/DeepFM_TensorFlow.py</url>
-          <line>101</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/util/train_model_util_TensorFlow.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Model/DeepFM_TensorFlow.py</url>
-          <line>111</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/util/train_model_util_TensorFlow.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DL$regression.coverage" NAME="regression Coverage Results" MODIFIED="1563284303810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regression" />
-    <SUITE FILE_PATH="coverage/DL$dataPreprocess_TensorFlow.coverage" NAME="dataPreprocess_TensorFlow Coverage Results" MODIFIED="1583742018761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/Criteo/forOtherModels" />
-    <SUITE FILE_PATH="coverage/DL$DeepFM_TensorFlow.coverage" NAME="DeepFM_TensorFlow Coverage Results" MODIFIED="1583741692219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model" />
+    <SUITE FILE_PATH="coverage/DL$dataPreprocess_TensorFlow.coverage" NAME="dataPreprocess_TensorFlow Coverage Results" MODIFIED="1583749971339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/Criteo/forOtherModels" />
+    <SUITE FILE_PATH="coverage/DL$DeepFM_TensorFlow.coverage" NAME="DeepFM_TensorFlow Coverage Results" MODIFIED="1583757419710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Model" />
     <SUITE FILE_PATH="coverage/DL$classification.coverage" NAME="classification Coverage Results" MODIFIED="1562936460034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classification" />
     <SUITE FILE_PATH="coverage/DL$text_classification.coverage" NAME="text_classification Coverage Results" MODIFIED="1563283222625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text_classification" />
   </component>
@@ -397,16 +462,6 @@
       <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
     <entry file="file://D:/python3/Lib/site-packages/tensorflow/python/keras/engine/network.py" />
-    <entry file="file://$PROJECT_DIR$/text_classification/text_classification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#50#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classification/classification.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -419,7 +474,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/regression/regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
+        <state relative-caret-position="1496">
           <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -427,31 +482,268 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Criteo/test.txt">
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-27452815/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92664">
+          <caret line="4212" column="8" selection-start-line="4212" selection-start-column="8" selection-end-line="4212" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/ops/gen_dataset_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="2671" selection-start-line="2671" selection-end-line="2671" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/util/nest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="261" selection-start-line="261" selection-end-line="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/pywrap_tensorflow_internal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="2650" selection-start-line="2650" selection-end-line="2650" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/_collections_abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="395" selection-start-line="395" selection-end-line="395" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/load_data_util.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1181" selection-start-line="1181" selection-end-line="1181" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/framework/tensor_spec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/framework/tensor_shape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="751" selection-start-line="751" selection-end-line="751" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/keras/optimizer_v2/adam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/keras/optimizer_v2/optimizer_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="560" selection-start-line="560" selection-end-line="560" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/eager/context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="718" selection-start-line="718" selection-end-line="718" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/data/ops/iterator_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-731">
+          <caret line="589" selection-start-line="589" selection-end-line="589" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/eager/function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="1432" selection-start-line="1432" selection-end-line="1432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/util/tf_inspect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="251" selection-start-line="251" selection-end-line="251" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/util/tf_decorator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/training/tracking/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="454" selection-start-line="454" selection-end-line="454" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/keras/engine/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="420" selection-start-line="420" selection-end-line="420" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/data/ops/readers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/data/ops/dataset_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="743" selection-start-line="743" selection-end-line="743" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Criteo/forOtherModels/train_value">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="36039" column="43" lean-forward="true" selection-start-line="36039" selection-start-column="43" selection-end-line="36039" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Criteo/forOtherModels/train_idx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792863">
+          <caret line="36040" column="68" selection-start-line="36040" selection-start-column="68" selection-end-line="36040" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Criteo/forOtherModels/train_label">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Criteo/forOtherModels/test_idx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="3958" column="68" selection-start-line="3958" selection-start-column="68" selection-end-line="3958" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Criteo/forOtherModels/test_label">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Criteo/train.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Criteo/test.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/DeepFM_TensorFlow.py">
+    <entry file="file://$PROJECT_DIR$/data/Criteo/forOtherModels/test_value">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="340">
+          <caret line="2202" column="16" selection-start-line="2202" selection-start-column="12" selection-end-line="2202" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text_classification/text_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="61" column="44" lean-forward="true" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/格式化数据分类/structed_data_classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/train_model_util_PyTorch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-188">
+          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DeepFM_PyTorch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="102" column="20" lean-forward="true" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/Criteo/forOtherModels/dataPreprocess_TensorFlow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="34" column="27" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        <state relative-caret-position="-1090">
+          <caret line="100" column="37" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python3/Lib/site-packages/tensorflow_core/python/eager/def_function.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="543" column="34" selection-start-line="543" selection-start-column="34" selection-end-line="543" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Criteo/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/DeepFM_TensorFlow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/train_model_util_TensorFlow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="99" column="2" selection-start-line="99" selection-start-column="2" selection-end-line="100" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

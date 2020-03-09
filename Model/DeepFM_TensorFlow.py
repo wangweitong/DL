@@ -51,7 +51,7 @@ class DeepFM(tf.keras.Model):
             setattr(self, 'dropout_' + str(i), tf.keras.layers.Dropout(dropout_deep[i + 1]))
 
         # 最后一层全连接层
-        self.fc = tf.keras.layers.Dense(1, activation=None, use_bias=True)
+        self.fc = tf.keras.layers.Dense(1, activation="sigmoid", use_bias=True)
 
     def call(self, feat_index, feat_value):
         feat_value = tf.expand_dims(feat_value, axis=-1)                     # None * F * 1
@@ -97,7 +97,7 @@ if __name__ == '__main__':
     feat_dict_ = pickle.load(open(AID_DATA_DIR + '/feat_dict_10.pkl2', 'rb'))
     print(len(feat_dict_))
     # 创建模型
-    deepfm = DeepFM(num_feat=len(feat_dict_) + 1, num_field=39,
+    deepfm = DeepFM(num_feat=len(feat_dict_) + 1, num_field=18,
                     dropout_deep=[0.5, 0.5, 0.5, 0.5], dropout_fm=[0, 0],
                     layer_sizes=[400, 400, 400], embedding_size=10)
     train_label_path = AID_DATA_DIR + 'train_label'
