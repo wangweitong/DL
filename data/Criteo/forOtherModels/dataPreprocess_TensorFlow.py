@@ -1,6 +1,6 @@
-from data.Criteo.util import *
-
 import numpy as np
+
+from data.Criteo.util import *
 
 """
 Data Process for FM, PNN, and DeepFM.
@@ -18,15 +18,16 @@ def get_train_test_file(file_path, feat_dict_, split_ratio=0.9):
     test_value_fout = open('test_value', 'w')
     test_idx_fout = open('test_idx', 'w')
 
-    continuous_range_ = range(1, 14)
-    categorical_range_ = range(14, 40)
-    cont_min_ = [0, -3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    cont_max_ = [5775, 257675, 65535, 969, 23159456, 431037, 56311, 6047, 29019, 46, 231, 4008, 7393]
+    categorical_range_ = range(1, 10)
+    continuous_range_ = range(10, 18)
+    cont_min_ = [1, 0, -1.0, 0.001388888888888889, -8707.090833333334, -962673.0000000001, 1.0, -2.0]
+    cont_max_ = [30232, 404, 9.0, 8856.886111111111, 8725.736944444445, 2195706.5, 9.0, 3.0]
     cont_diff_ = [cont_max_[i] - cont_min_[i] for i in range(len(cont_min_))]
+
     # 分割并获取索引以及特征值这些
     def process_line_(line):
-        # 用\t分割获取每行元素
-        features = line.rstrip('\n').split('\t')
+        # 用,分割获取每行元素
+        features = line.rstrip('\n').split(',')
         feat_idx, feat_value, label = [], [], []
 
         # MinMax Normalization 对于连续特征 最大最小标准化
@@ -65,9 +66,9 @@ def get_train_test_file(file_path, feat_dict_, split_ratio=0.9):
             # 给每一行赋值
             feat_idx, feat_value, label = process_line_(line)
 
-            feat_value = '\t'.join([str(v) for v in feat_value]) + '\n'
-            feat_idx = '\t'.join([str(idx) for idx in feat_idx]) + '\n'
-            label = '\t'.join([str(idx) for idx in label]) + '\n'
+            feat_value = ','.join([str(v) for v in feat_value]) + '\n'
+            feat_idx = ','.join([str(idx) for idx in feat_idx]) + '\n'
+            label = ','.join([str(idx) for idx in label]) + '\n'
             # print("feat_value",feat_value, "feat_idx", feat_idx, "label", label)
 
             if np.random.random() <= split_ratio:
@@ -106,16 +107,16 @@ def get_feat_dict():
         with open('../train.txt', 'r') as fin:
             for line_idx, line in enumerate(fin):
                 # for test
-                print("line_idx---",line_idx,"line---",line)
+                print("line_idx---", line_idx, "line---", line)
                 if line_idx >= EACH_FILE_DATA_NUM * 10:
                     break
 
                 if line_idx % EACH_FILE_DATA_NUM == 0:
                     print('generating feature dict', line_idx / 45000000)
-                features = line.rstrip('\n').split('\t')
+                features = line.rstrip('\n').split(',')
                 for idx in categorical_range_:
                     if features[idx] == '': continue
-                    print(features[idx], idx)
+                    print(features[idx],"----333", idx)
                     feat_cnt.update([features[idx]])
 
         # Only retain discrete features with high frequency
@@ -142,7 +143,7 @@ def get_feat_dict():
                 if line_idx >= EACH_FILE_DATA_NUM * 10:
                     break
 
-                features = line.rstrip('\n').split('\t')
+                features = line.rstrip('\n').split(',')
                 for idx in categorical_range_:
                     if features[idx] == '' or features[idx] not in dis_feat_set:
                         continue
