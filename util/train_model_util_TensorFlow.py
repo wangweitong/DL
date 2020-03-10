@@ -14,7 +14,7 @@ def train_test_model_demo(model, train_label_path, train_idx_path, train_value_p
 
     optimizer = tf.keras.optimizers.Adam(learning_rate=1e-4)
 
-    for epoch in range(5):
+    for epoch in range(1):
         train_model(model, train_batch_dataset, optimizer, epoch)
         test_model(model, test_batch_dataset)
 
@@ -48,7 +48,7 @@ def cross_entropy_loss(y_true, y_pred):
 @tf.function
 def train_one_step(model, optimizer, idx, value, label):
     with tf.GradientTape() as tape:
-        output = model(idx, value)
+        output = model((idx, value))
         loss = cross_entropy_loss(y_true=label, y_pred=output)
 
         reg_loss = []
@@ -86,7 +86,7 @@ def test_model(model, test_batch_dataset):
         if len(label) == 0:
             break
 
-        output = model(idx, value)
+        output = model((idx, value))
         test_accuracy.update_state(y_true=label, y_pred=output)
         print('Final result: ', test_accuracy.result().numpy())
         pred_y.extend(list(output.numpy()))
